@@ -3,6 +3,7 @@ import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
 import products from "../products.json"
+import { checkout } from "../lib/checkout"
 
 export default function Home() {
   return (
@@ -19,13 +20,28 @@ export default function Home() {
         </h1>
 
         <ul className={styles.grid}>
-          {products.map(({ name, description, price, image }) => (
-            <li className={styles.card} key={name}>
+          {products.map(({ title, description, price, image, id }) => (
+            <li className={styles.card} key={title}>
               <a href="#">
-                <img src={image} alt={name} />
-                <h2>{name}</h2>
+                <img src={image} alt={title} />
+                <h2>{title}</h2>
                 <p>{price}</p>
                 <p>{description}</p>
+                <button
+                  className={styles.button}
+                  onClick={() =>
+                    checkout({
+                      lineItems: [
+                        {
+                          price: id,
+                          quantity: 1,
+                        },
+                      ],
+                    })
+                  }
+                >
+                  Buy now!
+                </button>
               </a>
             </li>
           ))}
@@ -38,7 +54,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
