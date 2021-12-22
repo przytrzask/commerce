@@ -1,23 +1,23 @@
 [
   {
     "id": "price_1ItwhLHo2kQ65OqhLOKdE9q3",
-    "title": "Space Jelly Tshirt",
-    "description": "Bring Cosmo the space Jellyfish to your wardrobe with this high quality tshirt.",
-    "image": "/images/spacejelly-tshirt.jpg",
+    "title": "Brainly hoodie",
+    "description": "Bring Brainly SWAG to your wardrobe with this high quality hoodie.",
+    "image": "/images/Hoodie.png",
     "price": 20.0
   },
   {
     "id": "price_1ItwjqHo2kQ65OqhFfdBDH0n",
-    "title": "Space Jelly Stickers",
-    "description": "Add some flare to your laptop with a sticker of Cosmo the Space Jellyfish.",
-    "image": "/images/spacejelly-stickers.jpg",
+    "title": "Brainly hoodie",
+    "description": "Bring Brainly SWAG to your wardrobe with this awesome quality hoodie.",
+    "image": "/images/Hoodie.png",
     "price": 10.0
   },
   {
     "id": "price_1ItwkJHo2kQ65Oqhv9Jgh7gy",
-    "title": "Space Jelly Combo",
-    "description": "Show your love for Cosmo with a tshirt and sticker combo pack!",
-    "image": "/images/spacejelly-combo.jpg",
+    "title": "Brainly hoodie",
+    "description": "Show your love for Brainly with a tshirt",
+    "image": "/images/Hoodie.png",
     "price": 25.0
   }
 ]
