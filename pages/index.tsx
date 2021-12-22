@@ -84,7 +84,7 @@ export default function Home() {
           <strong>Items:</strong>
           {totalItems}
           <br />
-          <strong>Total cost:</strong>$ {subTotal}
+          <strong>Total cost:</strong>PLN {subTotal}
           <br />
           <button className={styles.button} onClick={checkoutCart}>
             Check out
@@ -97,7 +97,7 @@ export default function Home() {
               <a href="#">
                 <img src={image} alt={title} />
                 <h2>{title}</h2>
-                <p>{price}</p>
+                <p>{price} pln</p>
                 <p>{description}</p>
                 <button
                   className={styles.button}
